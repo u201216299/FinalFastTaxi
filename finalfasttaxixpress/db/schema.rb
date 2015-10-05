@@ -33,14 +33,14 @@ ActiveRecord::Schema.define(version: 20151005051112) do
 
   create_table "favorites", force: :cascade do |t|
     t.text     "description",  limit: 65535
-    t.integer  "Users_id",     limit: 4
+    t.integer  "customers_id", limit: 4
     t.integer  "districts_id", limit: 4
     t.text     "reference",    limit: 65535
     t.datetime "created_at",                 null: false
     t.datetime "updated_at",                 null: false
   end
 
-  add_index "favorites", ["Users_id"], name: "index_favorites_on_Users_id", using: :btree
+  add_index "favorites", ["customers_id"], name: "index_favorites_on_Users_id", using: :btree
   add_index "favorites", ["districts_id"], name: "index_favorites_on_districts_id", using: :btree
 
   create_table "user_profiles", force: :cascade do |t|

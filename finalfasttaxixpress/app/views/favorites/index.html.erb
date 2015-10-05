@@ -6,7 +6,7 @@
   <thead>
     <tr>
       <th>Description</th>
-      <th>Users</th>
+      <th>Customer</th>
       <th>Districts</th>
       <th>Reference</th>
       <th colspan="3"></th>
@@ -17,8 +17,8 @@
     <% @favorites.each do |favorite| %>
       <tr>
         <td><%= favorite.description %></td>
-        <td><%= favorite.Users %></td>
-        <td><%= favorite.districts %></td>
+        <td><%= Customer.find(favorite.customers_id).name %></td>
+        <td><%= District.find(favorite.districts_id).description %></td>
         <td><%= favorite.reference %></td>
         <td><%= link_to 'Show', favorite %></td>
         <td><%= link_to 'Edit', edit_favorite_path(favorite) %></td>

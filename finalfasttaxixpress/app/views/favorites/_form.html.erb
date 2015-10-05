@@ -16,12 +16,12 @@
     <%= f.text_area :description %>
   </div>
   <div class="field">
-    <%= f.label :Users_id %><br>
-    <%= f.text_field :Users_id %>
+    <%= f.label :customers_id %><br>
+    <%= f.collection_select :customers_id, Customer.all, :id, :name, :selected => @favorite.customers_id  %>
   </div>
   <div class="field">
     <%= f.label :districts_id %><br>
-    <%= f.text_field :districts_id %>
+    <%= f.collection_select :districts_id, District.all, :id, :description, :selected => @favorite.districts_id  %>
   </div>
   <div class="field">
     <%= f.label :reference %><br>
