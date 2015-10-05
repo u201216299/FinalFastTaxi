@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  resources :services
+  resources :vehicles
+  get 'register/index'
+
+  get 'login/index'
+
   resources :favorites
   resources :customers
   get 'intranet/index'
