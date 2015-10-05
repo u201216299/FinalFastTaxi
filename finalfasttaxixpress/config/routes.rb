@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  resources :customers
+  get 'intranet/index'
+
+  get 'home/index'
+
   resources :users
   resources :user_profiles
   resources :districts
