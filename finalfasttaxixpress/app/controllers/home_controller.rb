@@ -1,20 +1,10 @@
 class HomeController < ApplicationController
   
-  layout "layout"
+  layout "HomePage"
   
-   def index
+  def index
   end
   
-  def contacto
-  end
   
-  def nosotros
-  end
-  
-  def personal
-  end
-  
-  def servicio
-  end
   
 end
