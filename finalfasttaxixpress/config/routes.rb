@@ -1,4 +1,13 @@
 Rails.application.routes.draw do
+
+ get 'home/index' 
+  root 'home#index'
+  
+  get 'home/contacto'
+  get 'home/nosotros'
+  get 'home/personal'
+  get 'home/servicio'
+
   resources :services
   resources :vehicles
   get 'register/index'
