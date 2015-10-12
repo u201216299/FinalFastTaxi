@@ -1,0 +1,42 @@
+    <tr>
+        <td colspan="3" align="center">
+            
+            
+            <table>
+                <tr>
+                    <td>
+                        <!-------------------------------------->
+                        <%= form_for(@customer) do |f| %>
+                        <table>
+                            <tr>
+                                <td>
+                                    Usuario
+                                </td>
+                                <td>
+                                    <%= f.text_area :user %>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Password
+                                </td>
+                                <td>
+                                    <%= f.text_area :password %>
+                                </td>
+                            </tr>           
+                            <tr>
+                                <td colspan=2>
+                                    <%= link_to "LOGIN", intranet_index_path  %>
+                                </td>
+                            </tr>
+                        </table>
+                        <% end %>
+                        <!-------------------------------------->
+                    </td>
+                </tr>
+            </table>
+            
+            
+        </td>
+    </tr>
+    <tr>

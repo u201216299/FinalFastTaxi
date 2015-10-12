@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Devtxpress</title>
+
+
+ <link href="/assets/stylesheets/style2.css" media="screen" rel="stylesheet" />
+      
+      
+
+
+</head>
+
+<body>
+  
+<center>
+    
+<table width="1032" border=1>
+    <tr>
+        <td>
+
+<table border = "0" width="1030">
+    <Tr>
+        <td><%= image_tag("logo.png")%></td>  <td colspan="2" align="right"><%= link_to "Register", register_index_path  %>    -  <%= link_to "Login", login_index_path  %></td>
+    </Tr>
+    <tr>
+				<td colspan="3" width="98%" height="42" align="left" bgcolor="#252525" >
+                
+                <table>
+                    <tr>
+                        <td width="85%">
+                
+                            <font size=4 color="white">Home - </font>
+                            <font size=4 color="white">About us - </font> 
+                            <font size=4 color="white">Services - </font> 
+                            <font size=4 color="white">References - </font> 
+                            <font size=4 color="white">Drivers - </font> 
+                            <font size=4 color="white">Contact us</font> 
+                            
+                            
+                            
+                        </td>
+                    </tr>
+                </table>
+                
+                </td>
+    </tr>
+    
+    
+    <!------------------------------------------------->
+    <!------------------------------------------------->  
+ <%= yield %>
+ 
+ 
+     <!------------------------------------------------->
+    <!------------------------------------------------->
+    <!------------------------------------------------->
+    
+    <TR>
+        
+        <TD colspan=3 bgcolor="white">
+            
+            <center><h3>&copy; TAXI XPRESS COMPANY</h3></center>
+            
+        </TD>
+    </TR>
+    
+</table>
+
+
+</td>
+    </tr>
+</table>
+
+</center>
+</body>
+</html>

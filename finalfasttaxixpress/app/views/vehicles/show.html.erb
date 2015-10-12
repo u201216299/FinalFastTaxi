@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h3>
+  <strong>Users:</strong>
+  <%=  User.find(@vehicle.Users_id).name %>  
+</h3>
+
+<h3>
+  <strong>Brand:</strong>
+  <%= @vehicle.brand %>
+</h3>
+
+<h3>
+  <strong>Year:</strong>
+  <%= @vehicle.year %>
+</h3>
+
+<h3>
+  <strong>Color:</strong>
+  <%= @vehicle.color %>
+</h3>
+
+<h3>
+  <strong>Passengers:</strong>
+  <%= @vehicle.passengers %>
+</h3>
+
+<%= link_to 'Edit', edit_vehicle_path(@vehicle) %> |
+<%= link_to 'Back', vehicles_path %>

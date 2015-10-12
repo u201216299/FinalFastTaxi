@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Users_id: 
+  brand: MyText
+  year: MyText
+  color: MyText
+  passengers: MyText
+
+two:
+  Users_id: 
+  brand: MyText
+  year: MyText
+  color: MyText
+  passengers: MyText

@@ -1,0 +1,19 @@
+body {margin:0}
+.fleft {float:left}
+.fright {float:right}
+.fclear {clear:both}
+.inner_copy, .inner_copy a {border:0;float:right;background:#fff;color:#f00;width:50%;line-height:10px;font-size:10px;margin:-220% 0 0 0;overflow:hidden;padding:0}
+.txt1 {font-family:Arial, Helvetica, sans-serif;font-size:12px;font-weight:bold;color:#424242;padding:0 54px 0 0}
+.txt2 {font-family:Arial, Helvetica, sans-serif;font-size:12px;font-weight:normal;color:#fff;padding:0 0 0 30px}
+.txt2 a {color:#fff;text-decoration:none;padding:0 30px 0 0}
+.txt2 a:hover {color:#FFC466;padding:0 30px 0 0}
+.txt4 {font-family:Arial, Helvetica, sans-serif;font-size:30px;font-weight:normal;color:#000;padding:0 0 0 15px}
+.txt5 {font-family:Arial, Helvetica, sans-serif;font-size:12px;font-weight:bold;color:#585858;padding:0 0 0 15px}
+.txt6 {font-family:Arial, Helvetica, sans-serif;font-size:12px;text-align:justify;font-weight:normal;color:#585858;padding:0 0 15px 12px}
+.border {border-right:1px solid #D8D8D8}
+.heading_2 {background-color:#252525;font-family:Arial, Helvetica, sans-serif;font-size:20px;color:#FF9C00;padding-left:10px;padding-top:10px;padding-bottom:8px}
+.text_box {background-color:#252525;font-family:Arial, Helvetica, sans-serif;font-size:12px;color:#757575;text-align:left;padding-left:10px;padding-top:0;padding-bottom:7px}
+.more_bg {background-color:#252525;padding-right:10px;line-height:17px;text-align:right}
+.more {font-family:Arial, Helvetica, sans-serif;font-size:10px;text-decoration:none;color:#CFCFCF}
+.more:hover {font-family:Arial, Helvetica, sans-serif;font-size:10px;text-decoration:none;color:#CFCFCF}
+.copy_right {background-color:#252525;font-family:Arial, Helvetica, sans-serif;font-size:10px;color:#252525;background-color:#BECAC6;padding-left:18px;padding-top:10px;padding-bottom:8px}

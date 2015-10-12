@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Users_id: 
+  districts_id: 
+  reference_origin: MyText
+  districts_id: 
+  reference_destination: MyText
+  Users_id: 
+
+two:
+  Users_id: 
+  districts_id: 
+  reference_origin: MyText
+  districts_id: 
+  reference_destination: MyText
+  Users_id: 

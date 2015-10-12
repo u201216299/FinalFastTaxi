@@ -1,0 +1,64 @@
+<%= form_for(@service) do |f| %>
+  <% if @service.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@service.errors.count, "error") %> prohibited this service from being saved:</h2>
+
+      <ul>
+      <% @service.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  
+  <fieldset>
+    <legend>Cutomer</legend>
+    
+      <div class="field">
+        <%= f.label :Customers_id %><br>
+        <%= f.collection_select :Customer_id, Customer.all, :id, :name, :selected => @service.Customer_id  %>
+      </div>
+  
+  </fieldset>  
+  
+
+  
+  
+  <fieldset>
+    <legend>Origin</legend>
+    
+      <div class="field">
+        <%= f.label :districts_id %><br>
+        <%= f.collection_select :districts_id, District.all, :id, :description, :selected => @service.districts_id  %>
+      </div>
+      <div class="field">
+        <%= f.label :reference_origin %><br>
+        <%= f.text_area :reference_origin %>
+      </div>
+  
+  </fieldset>
+  
+  <fieldset>
+    <legend>Destination</legend>
+    
+      <div class="field">
+        <%= f.label :districts_id_des %><br>
+        <%= f.collection_select :districts_id_des, District.all, :id, :description, :selected => @service.districts_id_des  %>
+      </div>
+      <div class="field">
+        <%= f.label :reference_destination %><br>
+        <%= f.text_area :reference_destination %>
+      </div>
+  
+  </fieldset>  
+
+  <div class="field">
+    <%= f.label :Users_id %><br>
+    <%= f.collection_select :Users_id, User.all, :id, :name, :selected => @service.Users_id  %>
+  </div>
+  
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

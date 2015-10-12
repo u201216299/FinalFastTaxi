@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<h3>
+  <strong>Users:</strong>
+  <%= Customer.find(@service.Customer_id).name %>
+</h3>
+
+<h3>
+  <strong>Districts Origin:</strong>
+  <%= District.find(@service.districts_id).description %>
+</h3>
+
+<h3>
+  <strong>Reference origin:</strong>
+  <%= @service.reference_origin %>
+</h3>
+
+<h3>
+  <strong>Districts destination:</strong>
+  <%= District.find(@service.districts_id_des).description %>
+</h3>
+
+<h3>
+  <strong>Reference destination:</strong>
+  <%= @service.reference_destination %>
+</h3>
+
+<h3>
+  <strong>Users:</strong>
+  <%=  User.find(@service.Users_id).name %>  
+</h3>
+
+<%= link_to 'Edit', edit_service_path(@service) %> |
+<%= link_to 'Back', services_path %>
